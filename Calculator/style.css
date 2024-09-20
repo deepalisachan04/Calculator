@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d4e2ee;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.calculator {
+    background: #2a2f3a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.display input {
+    width: 100%;
+    height: 60px;
+    background: #1e242d;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    color: #fff;
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.1), 
+                inset 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    background: #333b46;
+    border: none;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.1), 
+                4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.buttons button:active {
+    background: #50575f;
+}
+
+.equal {
+    grid-column: span 2;
+    background-color: #5c98f5;
+    color: #fff;
+    font-size: 20px;
+    transition: background 0.3s;
+}
+
+.equal:active {
+    background-color: #3c7ddb;
+}
+
+.equal {
+    grid-column: span 2; /* Extend equal button across 3 columns */
+    background-color: #5c98f5;
+    color: #fff;
+    font-size: 20px;
+    transition: background 0.3s;
+}
